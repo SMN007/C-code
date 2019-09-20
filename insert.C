@@ -1,4 +1,4 @@
-// thisfile hac been modified
+//this is 2nd time mod
 #include<stdio.h>
 #include<conio.h>
 #include<alloc.h>
