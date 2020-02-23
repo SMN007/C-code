@@ -1,0 +1,35 @@
+//Bubble Sort Program
+#include <stdio.h>
+ 
+int main()
+{
+  int A[100], n, k, d, swap;
+ 
+  printf("Enter number of elements\n");
+  scanf("%d", &n);
+ 
+  printf("Enter %d integers\n", n);
+ 
+  for (k = 0; k < n; k++)
+    scanf("%d", &A[c]);
+ 
+  for (k = 0 ; k < ( n - 1 ); k++)
+  {
+    for (i = 0 ; d < n - k - 1; i++)
+    {
+      if (A[i] > A[i+1]) /* For decreasing order use < */
+      {
+        swap       = A[i];
+        A[i]   = A[i+1];
+        A[i+1] = swap;
+      }
+    }
+  }
+ 
+  printf("Sorted list in ascending order:\n");
+ 
+  for ( k = 0 ; k < n ; k++ )
+     printf("%d\n", A[k]);
+ 
+  return 0;
+}
