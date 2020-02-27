@@ -1,0 +1,41 @@
+Selection Sort
+#include <stdio.h>
+ 
+int main()
+{
+   int A[100], n, i, j, minimum, swap;
+ 
+   printf("Enter number of elements\n");
+   scanf("%d", &n);
+ 
+   printf("Enter %d integers\n", n);
+ 
+   for ( i = 0 ; i < n ; i++ )
+    {
+      scanf("%d", &A[i]);
+    }
+   for ( i = 0 ; i < ( n - 1 ) ; i++ )
+   {
+      minimum = i;
+ 
+      for ( j = i + 1 ; j < n ; j++ )
+      {
+         if ( A[minimum] > A[j] )
+            minimum = j;
+      }
+      if ( minimum != i )
+      {
+         swap = A[i];
+         A[i] = A[minimum];
+         A[minimum] = swap;
+      }
+   }
+ 
+   printf("Sorted list in ascending order:\n");
+ 
+   for ( i = 0 ; i < n ; i++ )
+    {
+      printf("%d\n", A[i]);
+    }
+   return 0;
+}
